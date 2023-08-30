@@ -1,17 +1,18 @@
 ﻿using System;
 
-namespace Week1HW
+namespace HelloWorld
 {
     using static System.Console;
     class program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Who is being seen today?");
+            Console.WriteLine("What is your name?");
 
             string patientName = Console.ReadLine();
 
-            Console.WriteLine("Welcome " + patientName);
+            Console.WriteLine("Your name is " + patientName);
+            Console.ReadKey();
         }
     }
 }
