@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E315ECEF-81DF-4DEF-A18B-74CEC33BAB63}</ProjectGuid>
+    <ProjectGuid>{5C279FB8-2E11-4E7F-A663-40534F281CBA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Week4Class</RootNamespace>
-    <AssemblyName>Week4Class</AssemblyName>
+    <RootNamespace>Week4Class2</RootNamespace>
+    <AssemblyName>Week4Class2</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

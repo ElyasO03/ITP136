@@ -1,99 +1,45 @@
 ﻿using System;
 using static System.Console;
 
-namespace Week3Class
+namespace Week4Class
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int first = 5;
-            int second = 3;
+            Employee emp1 = new Employee();
+            Employee emp2 = new Employee();
 
-            if (first == second)
-            {
-                WriteLine("First equals second");
-            }
-            else
-            {
-                if (first > second)
-                {
-                    WriteLine("First is greater than second");
-                }
-                else
-                {
-                    WriteLine("First is less than second");
-                }
-            }
+            emp1.EmployeeId = 1234;
+            emp1.FirstName = "John";
+            emp1.LastName = "Smith";
+
+            emp2.EmployeeId = 4567;
+            emp2.FirstName = "Bill";
+            emp2.LastName = "Jones";
+
+            WriteLine("{0,10} {1,10} {2,10}", "employeeId", "FirstName", "LastName");
+
+            WriteLine("{0,10} {1,10} {2,10}", emp1.EmployeeId, emp1.FirstName, emp1.LastName);
+
+            WriteLine("{0,10} {1,10} {2,10}", emp2.EmployeeId, emp2.FirstName, emp2.LastName);
 
 
+            WriteLine("Enter Employee Id");
 
-            char ch = 'x';
+            emp2.EmployeeId = Convert.ToInt32(ReadLine());
 
-            if (ch == 'A' || ch == 'a')
-            {
-                WriteLine("Vowel");
-            }
-            else if (ch == 'E' || ch == 'e')
-            {
-                WriteLine("Vowel");
-            }
-            else if (ch == 'I' || ch == 'i')
-            {
-                WriteLine("Vowel");
-            }
-            else if (ch == 'O' || ch == 'o')
-            {
-                WriteLine("Vowel");
-            }
-            else if (ch == 'U' || ch == 'u')
-            {
-                WriteLine("Vowel");
-            }
-            else
-            {
-                WriteLine("Consonant");
-            }
+            WriteLine("Enter Employee First name");
 
+            emp2.FirstName = ReadLine();
 
+            WriteLine("Enter Employee Last name");
+            emp2.LastName = ReadLine();
 
-            int option, a, b, total;
-
-            WriteLine("please enter your first number");
-            a = Convert.ToInt32(ReadLine());
-
-            WriteLine("please enter your second number");
-            b = Convert.ToInt32(ReadLine());
-
-
-            WriteLine("1 - add number, 2 - subtraction, 3 - multiply, 4 - divide");
-            option = Convert.ToInt32(ReadLine());
-
-            switch(option)
-            {
-                case 1:
-                    total = (a + b);
-                    WriteLine("your tatal is {0}", total);
-                    break;
-                case 2:
-                    total = (a - b);
-                    WriteLine("your tatal is {0}", total);
-                    break;
-                case 3:
-                    total = (a * b);
-                    WriteLine("your tatal is {0}", total);
-                    break;
-                case 4:
-                    total = (a / b);
-                    WriteLine("your tatal is {0}", total);
-                    break;
-                default:
-                    WriteLine("YOU DIDN'T SELECT 1-4");
-                    break;
-            }
+            WriteLine("{0,10} {1,10} {2,10}", emp2.EmployeeId, emp2.FirstName, emp2.LastName);
 
             ReadKey();
-
         }
     }
+
 }
